@@ -16,13 +16,21 @@ On Day 1, the objective was to use hook up an IR sensor to my MSP430, connect it
 
 The IR sensor was connected to the GND, VCC, and XIN pins as shown below.
 
+![IR with MSP430](https://github.com/KevinCabusora/Cabusora-Lab-5/blob/master/IR%20with%20MSP430.JPG.png)
+
 It was then connected to the logic analyzer as shown in the picture below.
 
+![Logic Analyzer Connect](https://github.com/KevinCabusora/Cabusora-Lab-5/blob/master/Logic%20Analyzer%20Connect.JPG.png)
+
 I chose the Orion 076E0PV051 Remote Control, designated as #11 in the ECE lab.
+
+![Orion Remote](https://github.com/KevinCabusora/Cabusora-Lab-5/blob/master/Orion%20Remote.png)
 
 ## Testing
 
 To test, I ran the logic analyzer, then pressed a random button and observed the logic analyzer output, which would give me the pulse length.  As per instruction, a logic 0 half pulse followed by a logic 1 half pulse of the same size is interpreted as a 0, while a logic 0 half pulse followed by a logic 1 half pulse of greater size is a 1. The screenshot is shown below.
+
+![Logic Analyzer](https://github.com/KevinCabusora/Cabusora-Lab-5/blob/master/Logic%20Analyzer.JPG.png)
 
 Duration I observed by using the cursors on the logic analyzer to get me a precise value.  For the Timer A counts, besides the start and stop pulses, I used the Variables timer[1] and timer[0] arrays, and averaged them out to give me my Timer A values.
 
